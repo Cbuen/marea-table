@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maréa Table | Modern Coastal Restaurant in Carmel</title>
+  <meta name="description" content="Maréa Table is a modern coastal restaurant serving seasonal California cuisine, handcrafted cocktails, private dining, and reservations in Carmel-by-the-Sea." />
+  <meta name="keywords" content="Carmel restaurant, coastal restaurant, California cuisine, fine dining, brunch, dinner reservations, private dining" />
+  <meta property="og:title" content="Maréa Table | Modern Coastal Restaurant" />
+  <meta property="og:description" content="A polished restaurant website demo with reservations, menu storytelling, reviews, local SEO, and private dining sections." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Maréa Table",
+    "servesCuisine": "Modern Coastal California",
+    "priceRange": "$$$",
+    "telephone": "+1-831-555-0188",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "118 Ocean Avenue",
+      "addressLocality": "Carmel-by-the-Sea",
+      "addressRegion": "CA",
+      "postalCode": "93921",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"16:00","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"11:00","closes":"23:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"21:00"}
+    ],
+    "acceptsReservations": true,
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"1248"}
+  }
+  </script>
+</head>
+<body class="bg-[#fbf7ef] text-[#1f1a14]">
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-[#1f1a14]/70 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 text-white">
+      <a href="#home" class="group flex items-center gap-3">
+        <span class="grid h-11 w-11 place-items-center rounded-full border border-amber-200/40 bg-white/10 font-serif text-xl">M</span>
+        <span>
+          <span class="block font-serif text-xl font-bold leading-none">Maréa Table</span>
+          <span class="text-xs uppercase tracking-[0.25em] text-amber-100/70">Coastal Dining</span>
+        </span>
+      </a>
+      <button id="menuBtn" class="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold md:hidden">Menu</button>
+      <div id="navLinks" class="hidden items-center gap-7 text-sm font-semibold md:flex">
+        <a href="#menu" class="hover:text-amber-200">Menu</a>
+        <a href="#experience" class="hover:text-amber-200">Experience</a>
+        <a href="#reviews" class="hover:text-amber-200">Reviews</a>
+        <a href="#private" class="hover:text-amber-200">Private Dining</a>
+        <a href="#reserve" class="rounded-full bg-amber-200 px-5 py-2.5 text-[#1f1a14] hover:bg-white">Reserve</a>
+      </div>
+    </nav>
+    <div id="mobileNav" class="hidden border-t border-white/10 bg-[#1f1a14] px-5 py-5 text-white md:hidden">
+      <div class="flex flex-col gap-4 font-semibold">
+        <a href="#menu">Menu</a><a href="#experience">Experience</a><a href="#reviews">Reviews</a><a href="#private">Private Dining</a><a href="#reserve">Reserve</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-shell relative min-h-screen overflow-hidden pt-28 text-white">
+      <div class="absolute inset-0">
+        <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Elegant restaurant dining room" class="h-full w-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-r from-[#1f1a14]/95 via-[#1f1a14]/62 to-[#1f1a14]/20"></div>
+        <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#fbf7ef] to-transparent"></div>
+      </div>
+      <div class="relative mx-auto grid min-h-[calc(100vh-7rem)] max-w-7xl items-center gap-12 px-5 py-20 lg:grid-cols-[1.05fr_.75fr]">
+        <div class="reveal">
+          <p class="mb-5 inline-flex rounded-full border border-amber-200/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-amber-100">Modern coastal restaurant</p>
+          <h1 class="max-w-4xl font-serif text-6xl font-black leading-[0.9] md:text-8xl">A restaurant website that feels reservation-worthy.</h1>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-stone-200 md:text-xl">Seasonal dishes, cinematic visuals, reviews, events, local SEO, and a custom reservation experience designed to turn visitors into booked tables.</p>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#reserve" class="magnetic rounded-full bg-amber-200 px-8 py-4 font-extrabold text-[#1f1a14] shadow-2xl shadow-amber-950/40 transition hover:bg-white">Reserve a Table</a>
+            <a href="#menu" class="rounded-full border border-white/25 px-8 py-4 font-extrabold text-white backdrop-blur transition hover:bg-white hover:text-[#1f1a14]">Explore Menu</a>
+          </div>
+        </div>
+        <aside class="glass-card reveal hidden rounded-[2rem] p-7 lg:block">
+          <p class="text-xs font-bold uppercase tracking-[0.25em] text-amber-100">Tonight's highlight</p>
+          <h2 class="mt-4 font-serif text-4xl font-bold">Chef's Coastal Tasting</h2>
+          <p class="mt-3 text-stone-200">Six seasonal courses with optional wine pairing.</p>
+          <div class="mt-8 grid grid-cols-3 gap-3 text-center">
+            <div class="rounded-2xl bg-white/10 p-4"><b class="block text-2xl">4.8</b><span class="text-xs text-stone-300">Rating</span></div>
+            <div class="rounded-2xl bg-white/10 p-4"><b class="block text-2xl">12</b><span class="text-xs text-stone-300">Chef Picks</span></div>
+            <div class="rounded-2xl bg-white/10 p-4"><b class="block text-2xl">9PM</b><span class="text-xs text-stone-300">Late Seating</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="mx-auto -mt-10 grid max-w-6xl gap-4 px-5 md:grid-cols-4 relative z-10">
+      <div class="stat-card reveal"><span>Google-style reviews</span><strong>4.8 ★</strong></div>
+      <div class="stat-card reveal"><span>Local SEO ready</span><strong>Schema</strong></div>
+      <div class="stat-card reveal"><span>Fast reservation path</span><strong>3 steps</strong></div>
+      <div class="stat-card reveal"><span>Private dining leads</span><strong>Events</strong></div>
+    </section>
+
+    <section id="menu" class="section-pad mx-auto max-w-7xl px-5">
+      <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div class="reveal max-w-2xl">
+          <p class="eyebrow">Signature menu</p>
+          <h2 class="font-serif text-5xl font-black md:text-7xl">Food first. Always.</h2>
+          <p class="mt-5 text-lg text-stone-600">A restaurant website should sell the food before anything else. Filter dishes, highlight chef favorites, and make the next click obvious.</p>
+        </div>
+        <div class="reveal flex flex-wrap gap-3">
+          <button class="menu-filter active" data-filter="all">All</button>
+          <button class="menu-filter" data-filter="dinner">Dinner</button>
+          <button class="menu-filter" data-filter="brunch">Brunch</button>
+          <button class="menu-filter" data-filter="drinks">Drinks</button>
+        </div>
+      </div>
+
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <article class="dish-card reveal" data-category="dinner"><img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg" alt="Handmade pasta"><div><span>Dinner</span><h3>Brown Butter Tagliatelle</h3><p>Wild mushrooms, parmesan crema, toasted herbs.</p><b>$28</b></div></article>
+        <article class="dish-card reveal" data-category="dinner"><img src="https://images.pexels.com/photos/3296279/pexels-photo-3296279.jpeg" alt="Seafood plate"><div><span>Chef Pick</span><h3>Pacific Seared Halibut</h3><p>Citrus beurre blanc, fennel, charred lemon.</p><b>$36</b></div></article>
+        <article class="dish-card reveal" data-category="brunch"><img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg" alt="Brunch pancakes"><div><span>Brunch</span><h3>Lemon Ricotta Pancakes</h3><p>Berry compote, mascarpone, maple drizzle.</p><b>$18</b></div></article>
+        <article class="dish-card reveal" data-category="drinks"><img src="https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg" alt="Craft cocktail"><div><span>Drinks</span><h3>Golden Hour Spritz</h3><p>Aperitif, citrus, bubbles, rosemary mist.</p><b>$15</b></div></article>
+        <article class="dish-card reveal" data-category="dinner"><img src="https://images.pexels.com/photos/675951/pexels-photo-675951.jpeg" alt="Steak dinner"><div><span>Dinner</span><h3>Oak-Grilled Ribeye</h3><p>Garlic confit, salsa verde, crispy potatoes.</p><b>$48</b></div></article>
+        <article class="dish-card reveal" data-category="brunch"><img src="https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg" alt="Avocado toast"><div><span>Brunch</span><h3>Market Avocado Toast</h3><p>Seeded sourdough, chili oil, soft herbs.</p><b>$17</b></div></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-pad bg-[#1f1a14] text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+        <div class="reveal">
+          <p class="eyebrow text-amber-200">The experience</p>
+          <h2 class="font-serif text-5xl font-black md:text-7xl">Designed like a destination.</h2>
+          <p class="mt-6 text-lg leading-8 text-stone-300">The best restaurant websites feel immersive: atmosphere, food, service, location, press, and booking are all connected in one polished journey.</p>
+          <div class="mt-8 space-y-4">
+            <div class="feature-row"><span>01</span><div><b>Editorial food storytelling</b><p>Big visuals and short copy make dishes memorable.</p></div></div>
+            <div class="feature-row"><span>02</span><div><b>Reservation-first conversion</b><p>Repeated CTAs guide visitors toward booking.</p></div></div>
+            <div class="feature-row"><span>03</span><div><b>Local SEO foundation</b><p>Meta tags, location keywords, hours, and schema markup.</p></div></div>
+          </div>
+        </div>
+        <div class="reveal grid grid-cols-2 gap-4">
+          <img class="gallery-tall" src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg" alt="Restaurant interior">
+          <img class="gallery-img" src="https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg" alt="Restaurant table">
+          <img class="gallery-img" src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg" alt="Chef cooking">
+          <img class="gallery-tall -mt-20" src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg" alt="Plated dish">
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section-pad mx-auto max-w-7xl px-5">
+      <div class="reveal mx-auto max-w-3xl text-center">
+        <p class="eyebrow">Social proof</p>
+        <h2 class="font-serif text-5xl font-black md:text-7xl">Reviews that build trust fast.</h2>
+        <p class="mt-5 text-lg text-stone-600">This section imitates the type of proof customers look for before deciding where to eat, without using restricted third-party branding.</p>
+      </div>
+      <div class="mt-12 grid gap-5 md:grid-cols-3">
+        <article class="review-card reveal"><div class="stars">★★★★★</div><p>“Beautiful atmosphere, incredible pasta, and the reservation process was effortless.”</p><b>— Sofia R.</b><span>Local guide-style review</span></article>
+        <article class="review-card reveal"><div class="stars">★★★★★</div><p>“The private dining room made our anniversary dinner feel custom and premium.”</p><b>— Daniel M.</b><span>Guest review</span></article>
+        <article class="review-card reveal"><div class="stars">★★★★★</div><p>“This site made me want to book before I even reached the menu.”</p><b>— Restaurant owner</b><span>Client-style feedback</span></article>
+      </div>
+    </section>
+
+    <section id="private" class="section-pad bg-[#efe3d0]">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-2 lg:items-center">
+        <div class="reveal overflow-hidden rounded-[2rem]"><img src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg" alt="Private dining event" class="h-[520px] w-full object-cover transition duration-700 hover:scale-105"></div>
+        <div class="reveal">
+          <p class="eyebrow">Events & private dining</p>
+          <h2 class="font-serif text-5xl font-black md:text-7xl">Turn celebrations into high-value leads.</h2>
+          <p class="mt-6 text-lg leading-8 text-stone-700">Restaurants do not only need reservations. They need event inquiries, catering leads, and private dining requests. This section creates another sales path.</p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="mini-card">Birthdays</div><div class="mini-card">Corporate dinners</div><div class="mini-card">Rehearsal dinners</div><div class="mini-card">Holiday parties</div>
+          </div>
+          <a href="#reserve" class="mt-8 inline-block rounded-full bg-[#1f1a14] px-8 py-4 font-extrabold text-white hover:bg-[#3f3128]">Request Event Info</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section-pad mx-auto max-w-7xl px-5">
+      <div class="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="reveal rounded-[2rem] bg-[#1f1a14] p-8 text-white md:p-10">
+          <p class="eyebrow text-amber-200">Reserve</p>
+          <h2 class="font-serif text-5xl font-black">Book direct.</h2>
+          <p class="mt-5 text-stone-300">No third-party reservation brand needed. A custom form keeps the restaurant's brand front and center.</p>
+          <div class="mt-8 space-y-4 text-stone-300">
+            <p><b class="text-white">Hours:</b> Mon–Thu 4–10, Fri–Sat 11–11, Sun 10–9</p>
+            <p><b class="text-white">Location:</b> 118 Ocean Avenue, Carmel-by-the-Sea, CA</p>
+            <p><b class="text-white">Phone:</b> (831) 555-0188</p>
+          </div>
+        </div>
+        <form id="reservationForm" class="reveal rounded-[2rem] border border-[#eadfce] bg-white p-6 shadow-2xl shadow-stone-900/10 md:p-10">
+          <div class="grid gap-4 md:grid-cols-2">
+            <label>Full Name<input required type="text" placeholder="Alex Morgan"></label>
+            <label>Email<input required type="email" placeholder="alex@email.com"></label>
+            <label>Date<input required type="date"></label>
+            <label>Time<select required><option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option></select></label>
+            <label>Guests<select required><option>2 guests</option><option>4 guests</option><option>6 guests</option><option>8+ guests</option></select></label>
+            <label>Occasion<select><option>Dinner</option><option>Birthday</option><option>Anniversary</option><option>Private Dining</option></select></label>
+          </div>
+          <label class="mt-4 block">Special Request<textarea placeholder="Window seat, allergies, celebration details..."></textarea></label>
+          <button class="mt-6 w-full rounded-full bg-amber-300 px-8 py-4 font-black text-[#1f1a14] transition hover:bg-[#1f1a14] hover:text-white">Request Reservation</button>
+          <p id="formMessage" class="mt-4 hidden rounded-2xl bg-green-100 p-4 font-bold text-green-800">Reservation request received. This demo would connect to email, a CMS, or booking backend.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#1f1a14] px-5 py-10 text-center text-stone-300">
+    <p class="font-serif text-3xl font-bold text-white">Maréa Table</p>
+    <p class="mt-2">Modern restaurant website demo by Go Online Studios.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
